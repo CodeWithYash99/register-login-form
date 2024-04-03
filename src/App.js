@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className='App'>
       <Routes>
-        <Route exact path='/login' element={<LoginForm />} />
+        <Route exact path='/register-login-form' element={<LoginForm />} />
         <Route exact path='/register' element={<RegisterForm />} />
       </Routes>
       
