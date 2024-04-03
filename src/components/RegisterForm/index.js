@@ -233,7 +233,7 @@ const RegisterForm = () => {
       {/* Form Container Ends Here */}
 
       <p className="already-registered">
-        Already Registered?{" "}
+        Already Registered?
         <Link to="/register-login-form" className="login-link">
           Log In
         </Link>
