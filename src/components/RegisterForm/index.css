@@ -1,0 +1,122 @@
+.register-container {
+  background: linear-gradient(to top, #f57a7a50, #ebeb3750, #36dea350);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  width: 40%;
+  height: 90vh;
+  border-radius: 10px;
+  box-shadow: #f57a7a;
+  border: 2px solid #f57a7a50;
+}
+
+.register-heading {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 30px;
+}
+
+form {
+  margin-top: 20px;
+  width: 80%;
+  height: auto;
+  overflow-y: scroll;
+}
+
+form::-webkit-scrollbar {
+  width: 0;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+.label-name {
+  font-family: "sans-serif";
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.input {
+  font-family: monospace;
+  font-size: 16px;
+  padding-left: 14px;
+  height: 34px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.gender-name {
+    font-family: "Roboto";
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.gender-block {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+}
+
+.gender-label {
+    font-family: "Sans-serif";
+    font-size: 16px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.input-check-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.check-box {
+  margin-right: 6px;
+}
+
+.check-box-label-name {
+  font-family: "Courier New";
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    background-color: #36dea3;
+    color: blanchedalmond;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 800;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.already-registered {
+    text-align: center;
+}
+
+.errMsg {
+  border: 2px solid red;
+}
+
+.login-link {
+  text-decoration: none;
+}
