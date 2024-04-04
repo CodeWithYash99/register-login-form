@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkregister_login_form=self.webpackChunkregister_login_form||[]).push([[952],{952:e=>{e.exports=function(){throw new Error("ws does not work in the browser. Browser clients must use the native WebSocket object")}}}]);
+//# sourceMappingURL=952.55ae5ec1.chunk.js.map
