@@ -118,5 +118,7 @@ button {
 }
 
 .login-link {
+  font-weight: 800;
+  margin-left: 4px;
   text-decoration: none;
 }

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { supabase } from "../Client";
 
 import "./index.css";
-import { Link } from "react-router-dom";
 
 const RegisterForm = () => {
   const [fullName, setFullName] = useState("");
@@ -13,11 +14,30 @@ const RegisterForm = () => {
   const [gender, setGender] = useState("Male");
   const [requiredField, setRequiredField] = useState("");
 
-  const handlerSubmit = (event) => {
+  const handlerSubmit = async (event) => {
     event.preventDefault();
 
+    try {
+      const { data } = await supabase.auth.signUp({
+        email: email,
+        password: password,
+        re_enter_password: repeatPassword,
+        mobile: mobile,
+        gender: gender,
+        age: age,
+        options: {
+          data: {
+            full_name: fullName,
+          },
+        },
+      });
+      console.log(data);
+    } catch (err) {
+      alert(err);
+    }
+
     if (password === repeatPassword) {
-      if (password.length === 8) {
+      if (password.length >= 8) {
         setFullName("");
         setEmail("");
         setPassword("");

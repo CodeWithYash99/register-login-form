@@ -1,15 +1,45 @@
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { supabase } from "../Client";
 
 import "./index.css";
-import { Link } from "react-router-dom";
 
-const LoginForm = () => {
+const LoginForm = (props) => {
+  const { setToken } = props;
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handlerSubmitLogin = (event) => {
-    event.preventDefault()
-  }
+  let navigate = useNavigate();
+
+  const handlerSubmitLogin = async (event) => {
+    event.preventDefault();
+
+    try {
+      let { data, error } = await supabase.auth.signInWithPassword({
+        email: email,
+        password: password,
+      });
+
+      if (error) throw error;
+      setToken(data);
+      navigate("/home");
+
+      if (email !== "" && password !== "") {
+        setEmail("");
+        setPassword("");
+      } else {
+        if (email === "" && password === "") {
+          alert("Please Provide the Details...");
+        } else if (email === "") {
+          alert("Please Enter your Email...");
+        } else if (password === "") {
+          alert("Please Enter your Password...");
+        }
+      }
+    } catch (error) {
+      alert(error);
+    }
+  };
 
   function handlerLoginEmail(e) {
     setEmail(e.target.value);
@@ -56,7 +86,9 @@ const LoginForm = () => {
           <h1>New here?</h1>
           <p>Sign up and discover more...</p>
         </div>
-        <Link to="/register" className='sign-link'>SIGN UP</Link>
+        <Link to="/register" className="sign-link">
+          SIGN UP
+        </Link>
       </div>
     </div>
   );
