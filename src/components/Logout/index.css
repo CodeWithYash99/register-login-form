@@ -1,0 +1,49 @@
+@media screen and (max-width: 576px) {
+    .logout-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        padding: 0 12px;
+    }
+    
+    .logout-button {
+        background-color: inherit;
+        color: #fff;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 600;
+        height: 24px;
+        margin-right: 12px;
+        border-radius: 10px;
+        border-style: none;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 577px) {
+    .logout-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .logout-button {
+        background: inherit;
+        color: #fff;
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-weight: 600;
+        width: 100px;
+        height: 34px;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .logout-button:hover {
+        background: #f37b7b;
+    }
+}

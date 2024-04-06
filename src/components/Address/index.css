@@ -1,0 +1,24 @@
+address {
+    width: 300px;
+}
+
+address h2 {
+    color: #fca523;
+    font-family: cursive;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+address .events-address {
+    color: rgb(240, 92, 92);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+address .events-mobile {
+    color: rgb(106, 194, 248);
+    font-family: 'Times New Roman';
+    font-size: 22px;
+    font-weight: 800;
+}

@@ -5,9 +5,6 @@
 }
 
 .App {
-  background-image: url('https://t3.ftcdn.net/jpg/01/18/52/80/360_F_118528027_3ttnstQpWqxttwhOxlSB5JTYP1f6uJPn.jpg');
-  background-size: cover;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;

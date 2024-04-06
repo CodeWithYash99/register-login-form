@@ -1,0 +1,84 @@
+.navbar-bg-container {
+  background-image: url('https://t4.ftcdn.net/jpg/06/70/47/83/360_F_670478365_rendlVf707cLCLdBEb2yM5EPW8xUL8bt.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+.navbar-container {
+  background-image: linear-gradient(to left, #eded6d80, #52efab80);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 95%;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.name-logo {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    green,
+    blue,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: "chiller";
+  font-size: 34px;
+  font-weight: 900;
+  margin: 0;
+  cursor: pointer;
+}
+
+.navbar-items-container {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-align: center;
+  color: #ffffff;
+  font-family: Times, serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 34px;
+  line-height: 34px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #f9dfbc;
+  color: #027b77;
+  border-radius: 6px;
+}
+
+.book-event-button {
+  background-image: linear-gradient(to right, #eded6d, #52efe2);
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.book-event-button:hover {
+    border: 1px solid #312f2f40;
+}

@@ -1,0 +1,14 @@
+.about-heading {
+  color: #edf2f6;
+  font-family: "Bahnschrift SemiCondensed";
+  font-size: 26px;
+  margin: 16px 0 14px 0;
+}
+
+.about-description {
+  text-align: justify;
+  color: cornsilk;
+  font-family: "Century";
+  font-size: 18px;
+  width: 60%;
+}
