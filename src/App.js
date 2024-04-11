@@ -10,6 +10,7 @@ import ContactUs from "./components/ContactUs";
 import NotFound from "./components/NotFound";
 
 import "./App.css";
+import { BookEvent } from "./components/BookEvent";
 
 const App = () => {
   const [token, setToken] = useState(false);
@@ -39,6 +40,7 @@ const App = () => {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/address" element={<Address />} />
         <Route exact path="/contactus" element={<ContactUs />} />
+        <Route exact path="/book-event" element={<BookEvent />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

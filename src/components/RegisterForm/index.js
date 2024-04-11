@@ -249,7 +249,7 @@ const RegisterForm = () => {
           </div>
 
           <div className="button-container">
-            <button type="submit">Submit</button>
+            <button className="register-button" type="submit">Submit</button>
           </div>
         </form>
         {/* Form Container Ends Here */}

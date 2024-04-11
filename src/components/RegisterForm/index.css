@@ -98,7 +98,7 @@ form::-webkit-scrollbar {
   width: 100%;
 }
 
-.button-container button {
+.register-button {
   background-color: #36dea3;
   color: blanchedalmond;
   font-family: "Times New Roman", Times, serif;
@@ -110,7 +110,6 @@ form::-webkit-scrollbar {
   border: none;
   outline: none;
   cursor: pointer;
-  border: 2px solid black;
 }
 
 .already-registered {

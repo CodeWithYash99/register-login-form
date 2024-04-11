@@ -1,0 +1,48 @@
+.book-event-form {
+    margin: 30px;
+    padding: 20px;
+    width: 95%;
+    min-height: 20vh;
+}
+
+.book-event-input-container {
+    width: 25%;
+    margin-bottom: 8px;
+}
+
+.book-event-input-container label {
+    color: #ffffff;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.book-event-input-container input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0 10px;
+    height: 34px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.confirm-book-event-button {
+    background-color: aqua;
+    color: #767471;
+    font-family: 'Benton';
+    font-size: 18px;
+    width: 120px;
+    border-radius: 6px;
+}
+
+.confirm-book-event-button:hover {
+    border: 1px solid #767471;
+}
+
+.event-status-msg {
+    color: blanchedalmond;
+    font-family: 'Benton';
+    font-size: 18px;
+}

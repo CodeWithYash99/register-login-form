@@ -41,7 +41,7 @@ const Navbar = () => {
         </ul>
 
         <div className="book-event-container">
-          <button className="book-event-button">Book Event</button>
+          <Link className="book-event-button" to='/book-event'>Book Event</Link>
         </div>
       </div>
     </div>
